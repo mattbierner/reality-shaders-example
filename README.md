@@ -2,6 +2,13 @@
 
 Demonstrates using ARKit to apply metal shaders to real world surfaces.
 
+![App demo](documentation/example.gif)
+
+**Links**:
+
+- [Demo video](https://youtu.be/BzwldX_Jz50)
+- [Blog post](https://blog.mattbierner.com/reality-shaders)
+
 ### Includes demos
 
 - Vertex shader — Applies a 3D sine wave to a surface by distorting position.
