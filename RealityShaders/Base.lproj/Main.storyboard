@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Reality Shader View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="RealityShaderViewController" customModule="Reality_Shaders" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RLh-bf-1c3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OVV-FV-4hq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <tabBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="d27-hx-eNe">
+                                <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="cBK-SS-99g"/>
+                                </constraints>
+                                <items>
+                                    <tabBarItem title="Vertex" image="Vertex" id="E1z-NA-Fpn"/>
+                                    <tabBarItem tag="1" title="Fragment" image="Fragment" id="ojh-No-ZFu"/>
+                                </items>
+                                <connections>
+                                    <outlet property="delegate" destination="BV1-FR-VrT" id="DBZ-Ne-uk1"/>
+                                </connections>
+                            </tabBar>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MW-lE-Qjz">
+                                <rect key="frame" x="167.80000000000001" y="538" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="d27-hx-eNe" secondAttribute="trailing" id="AG4-v4-dES"/>
+                            <constraint firstItem="3MW-lE-Qjz" firstAttribute="centerX" secondItem="GBj-4O-Whc" secondAttribute="centerX" id="Rhh-Nk-vlE"/>
+                            <constraint firstItem="d27-hx-eNe" firstAttribute="bottom" secondItem="RLh-bf-1c3" secondAttribute="bottom" symbolic="YES" id="gEr-ol-2EN"/>
+                            <constraint firstItem="d27-hx-eNe" firstAttribute="top" secondItem="3MW-lE-Qjz" secondAttribute="bottom" constant="15" id="iNN-xG-NBb"/>
+                            <constraint firstItem="d27-hx-eNe" firstAttribute="leading" secondItem="GBj-4O-Whc" secondAttribute="leading" id="txU-4e-gMI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GBj-4O-Whc"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="OVV-FV-4hq" id="sPS-PQ-Fhb"/>
+                        <outlet property="fragmentItem" destination="ojh-No-ZFu" id="LOf-Jm-yU0"/>
+                        <outlet property="resetButton" destination="3MW-lE-Qjz" id="yEp-5E-sXg"/>
+                        <outlet property="tabBar" destination="d27-hx-eNe" id="y57-1u-wAK"/>
+                        <outlet property="vertextItem" destination="E1z-NA-Fpn" id="Kom-HK-d8X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55.200000000000003" y="96.7016491754123"/>
+        </scene>
+        <!--Unsupported View Controller-->
+        <scene sceneID="QPm-sc-AhW">
+            <objects>
+                <viewController storyboardIdentifier="unsupportedDeviceMessage" id="Ww5-bb-kFx" userLabel="Unsupported View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nKl-Ig-Sg0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unsupported Device" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqL-yC-UYf">
+                                <rect key="frame" x="20" y="215.5" width="335" height="34"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ach-rh-boK">
+                                <rect key="frame" x="20" y="257.5" width="335" height="152.5"/>
+                                <string key="text">ARKit face tracking requires a device with a TrueDepth front-facing camera.
+
+Shipping apps must support devices without face tracking. In your app, offer UI to launch face tracking features only if the current device is supported.</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oqL-yC-UYf" firstAttribute="centerX" secondItem="nKl-Ig-Sg0" secondAttribute="centerX" id="4XK-M5-Qld"/>
+                            <constraint firstItem="Ach-rh-boK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nKl-Ig-Sg0" secondAttribute="leading" constant="20" symbolic="YES" id="AFv-0A-dZI"/>
+                            <constraint firstItem="oqL-yC-UYf" firstAttribute="width" secondItem="Ach-rh-boK" secondAttribute="width" id="FAc-2f-dTL"/>
+                            <constraint firstItem="Ach-rh-boK" firstAttribute="centerY" secondItem="nKl-Ig-Sg0" secondAttribute="centerY" id="J2Q-vj-ifu"/>
+                            <constraint firstItem="Ach-rh-boK" firstAttribute="centerX" secondItem="nKl-Ig-Sg0" secondAttribute="centerX" id="ME0-ye-UxJ"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ach-rh-boK" secondAttribute="trailing" constant="20" symbolic="YES" id="hbq-EQ-aUs"/>
+                            <constraint firstItem="Ach-rh-boK" firstAttribute="top" secondItem="oqL-yC-UYf" secondAttribute="bottom" constant="8" symbolic="YES" id="mW3-Zk-UIb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xCr-dq-97a"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="01d-4b-zAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980" y="97.536945812807886"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Fragment" width="23" height="23"/>
+        <image name="Vertex" width="23.5" height="23"/>
+    </resources>
+</document>

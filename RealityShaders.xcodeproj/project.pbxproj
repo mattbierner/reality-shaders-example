@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89D2C9C724AFAC9100827D2C /* RealityShaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D2C9AB24AFAC9100827D2C /* RealityShaderViewController.swift */; };
+		89D2C9C824AFAC9100827D2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D2C9AD24AFAC9100827D2C /* LaunchScreen.storyboard */; };
+		89D2C9CA24AFAC9100827D2C /* shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 89D2C9B024AFAC9100827D2C /* shaders.metal */; };
+		89D2C9CB24AFAC9100827D2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89D2C9B124AFAC9100827D2C /* Assets.xcassets */; };
+		89D2C9D124AFAC9100827D2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D2C9B824AFAC9100827D2C /* Main.storyboard */; };
+		89D2C9D324AFAC9100827D2C /* SCNVectorHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D2C9BC24AFAC9100827D2C /* SCNVectorHelpers.swift */; };
+		89D2C9D424AFAC9100827D2C /* ScnMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D2C9BD24AFAC9100827D2C /* ScnMatrix.swift */; };
+		89D2C9D724AFAC9100827D2C /* PlaneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D2C9C124AFAC9100827D2C /* PlaneNode.swift */; };
+		89D2C9DC24AFAC9100827D2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D2C9C624AFAC9100827D2C /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3929C4881E89EC2C00E00B60 /* Reality Shaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reality Shaders.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		89D2C9AB24AFAC9100827D2C /* RealityShaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealityShaderViewController.swift; sourceTree = "<group>"; };
+		89D2C9AD24AFAC9100827D2C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89D2C9B024AFAC9100827D2C /* shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = shaders.metal; sourceTree = "<group>"; };
+		89D2C9B124AFAC9100827D2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		89D2C9B724AFAC9100827D2C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89D2C9B924AFAC9100827D2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		89D2C9BC24AFAC9100827D2C /* SCNVectorHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNVectorHelpers.swift; sourceTree = "<group>"; };
+		89D2C9BD24AFAC9100827D2C /* ScnMatrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScnMatrix.swift; sourceTree = "<group>"; };
+		89D2C9C124AFAC9100827D2C /* PlaneNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaneNode.swift; sourceTree = "<group>"; };
+		89D2C9C624AFAC9100827D2C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3929C4851E89EC2C00E00B60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3929C47F1E89EC2C00E00B60 = {
+			isa = PBXGroup;
+			children = (
+				89D2C9AA24AFAC9100827D2C /* RealityShaders */,
+				3929C4891E89EC2C00E00B60 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3929C4891E89EC2C00E00B60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3929C4881E89EC2C00E00B60 /* Reality Shaders.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89D2C9AA24AFAC9100827D2C /* RealityShaders */ = {
+			isa = PBXGroup;
+			children = (
+				89D2C9AB24AFAC9100827D2C /* RealityShaderViewController.swift */,
+				89D2C9C624AFAC9100827D2C /* AppDelegate.swift */,
+				89D2C9BA24AFAC9100827D2C /* Extensions */,
+				89D2C9BE24AFAC9100827D2C /* AR */,
+				89D2C9AC24AFAC9100827D2C /* Resources */,
+				89D2C9B824AFAC9100827D2C /* Main.storyboard */,
+			);
+			path = RealityShaders;
+			sourceTree = "<group>";
+		};
+		89D2C9AC24AFAC9100827D2C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				89D2C9AD24AFAC9100827D2C /* LaunchScreen.storyboard */,
+				89D2C9B024AFAC9100827D2C /* shaders.metal */,
+				89D2C9B124AFAC9100827D2C /* Assets.xcassets */,
+				89D2C9B724AFAC9100827D2C /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		89D2C9BA24AFAC9100827D2C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				89D2C9BC24AFAC9100827D2C /* SCNVectorHelpers.swift */,
+				89D2C9BD24AFAC9100827D2C /* ScnMatrix.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		89D2C9BE24AFAC9100827D2C /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				89D2C9C124AFAC9100827D2C /* PlaneNode.swift */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3929C4871E89EC2C00E00B60 /* RealityShaders */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3929C49A1E89EC2C00E00B60 /* Build configuration list for PBXNativeTarget "RealityShaders" */;
+			buildPhases = (
+				3929C4841E89EC2C00E00B60 /* Sources */,
+				3929C4851E89EC2C00E00B60 /* Frameworks */,
+				3929C4861E89EC2C00E00B60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealityShaders;
+			productName = ARKitFaceExample;
+			productReference = 3929C4881E89EC2C00E00B60 /* Reality Shaders.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3929C4801E89EC2C00E00B60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					3929C4871E89EC2C00E00B60 = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = JM8U5NPN89;
+						LastSwiftMigration = 1150;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3929C4831E89EC2C00E00B60 /* Build configuration list for PBXProject "RealityShaders" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 3929C47F1E89EC2C00E00B60;
+			productRefGroup = 3929C4891E89EC2C00E00B60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3929C4871E89EC2C00E00B60 /* RealityShaders */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3929C4861E89EC2C00E00B60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89D2C9C824AFAC9100827D2C /* LaunchScreen.storyboard in Resources */,
+				89D2C9CB24AFAC9100827D2C /* Assets.xcassets in Resources */,
+				89D2C9D124AFAC9100827D2C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3929C4841E89EC2C00E00B60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89D2C9DC24AFAC9100827D2C /* AppDelegate.swift in Sources */,
+				89D2C9C724AFAC9100827D2C /* RealityShaderViewController.swift in Sources */,
+				89D2C9D324AFAC9100827D2C /* SCNVectorHelpers.swift in Sources */,
+				89D2C9CA24AFAC9100827D2C /* shaders.metal in Sources */,
+				89D2C9D424AFAC9100827D2C /* ScnMatrix.swift in Sources */,
+				89D2C9D724AFAC9100827D2C /* PlaneNode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		89D2C9B824AFAC9100827D2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89D2C9B924AFAC9100827D2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3929C4981E89EC2C00E00B60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3929C4991E89EC2C00E00B60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3929C49B1E89EC2C00E00B60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JM8U5NPN89;
+				GCC_OPTIMIZATION_LEVEL = 1;
+				INFOPLIST_FILE = "$(SRCROOT)/RealityShaders/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bierner.realityShaders;
+				PRODUCT_NAME = "Reality Shaders";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3929C49C1E89EC2C00E00B60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JM8U5NPN89;
+				INFOPLIST_FILE = "$(SRCROOT)/RealityShaders/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bierner.realityShaders;
+				PRODUCT_NAME = "Reality Shaders";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3929C4831E89EC2C00E00B60 /* Build configuration list for PBXProject "RealityShaders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3929C4981E89EC2C00E00B60 /* Debug */,
+				3929C4991E89EC2C00E00B60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3929C49A1E89EC2C00E00B60 /* Build configuration list for PBXNativeTarget "RealityShaders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3929C49B1E89EC2C00E00B60 /* Debug */,
+				3929C49C1E89EC2C00E00B60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3929C4801E89EC2C00E00B60 /* Project object */;
+}
