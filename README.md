@@ -2,7 +2,7 @@
 
 Demonstrates using ARKit to apply metal shaders to real world surfaces.
 
-![App demo](documentation/example.gif)
+![App demo](documentation/demo.gif)
 
 **Links**:
 
