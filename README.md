@@ -8,6 +8,7 @@ Demonstrates using ARKit to apply metal shaders to real world surfaces.
 
 - [Demo video](https://youtu.be/BzwldX_Jz50)
 - [Blog post](https://blog.mattbierner.com/reality-shaders)
+- [In The Walls](https://blog.mattbierner.com/in-the-walls) (production app using this effect)
 
 ### Includes demos
 
