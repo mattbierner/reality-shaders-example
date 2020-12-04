@@ -79,7 +79,8 @@ class RealityShaderViewController: UIViewController {
     
     @objc func resetPlane() {
         placedPlane = false
-        planeNode!.contentNode.isHidden = true
+        guard let node = planeNode else { return }
+        node.contentNode.isHidden = true
     }
 }
 
